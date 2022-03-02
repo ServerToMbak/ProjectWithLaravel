@@ -18,6 +18,7 @@ class KonuFactory extends Factory
         return [
             'pointName'=>$this->faker->sentence(rand(3,7)),
            'opinion'=>$this->faker->text(2000),
+            'Konu_photo_path'=>$this->faker->imageUrl($width = 640, $height = 480),
         ];
     }
 }
