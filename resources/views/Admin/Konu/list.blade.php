@@ -9,7 +9,10 @@
     </div>
 
         @foreach($konus as $konu)
+
         <div class="position-relative bg-light m-5">
+            <img src={{$konu->Konu_photo_path}} alt="img">
+
             <a href="{{route('Konu.edit',$konu->id)}}" class="position-absolute top-0 mx-5 end-0 btn btn-sm btn-primary" >DÜZENLE</a>
             <a href="{{route('Konu.destroy',$konu->id)}}" class="position-absolute top-0 end-0 btn btn-sm btn-danger" >SİL</a>
 
